@@ -1,0 +1,26 @@
+<?php
+/**
+ * @category  Custom
+ * @package   Custom\Status
+ * @author    Anton Dudenkoff <anton@dudenkoff.com>
+ * @copyright 2019 Custom
+ */
+?>
+<form class="form form-edit-account" action="<?php echo $block->escapeUrl($block->getAction()) ?>" method="post" id="form-validate">
+    <fieldset class="fieldset">
+        <?php echo $block->getBlockHtml('formkey') ?>
+
+        <div class="field required">
+            <label for="status" class="label"><span><?php echo $block->escapeHtml(__('Status')) ?></span></label>
+            <input type="text" name="status" id="status" value="<?php echo $block->getStatus() ?>">
+        </div>
+
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit" title="<?php echo $block->escapeHtml(__('Save')) ?>" class="action save primary">
+                    <span><?php echo $block->escapeHtml(__('Save')) ?></span>
+                </button>
+            </div>
+        </div>
+    </fieldset>
+</form>

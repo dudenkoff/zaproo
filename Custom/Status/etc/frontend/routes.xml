@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Custom
+ * @package   Custom\Status
+ * @author    Anton Dudenkoff <anton@dudenkoff.com>
+ * @copyright 2019 Custom
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="status" frontName="edit-status">
+            <module name="Custom_Status" />
+        </route>
+    </router>
+</config>
